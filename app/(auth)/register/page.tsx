@@ -58,7 +58,7 @@ export default function RegisterPage() {
       });
 
       if (response.ok) {
-        router.push(`http://${values.subdomain}.yourdomain.com/signin`);
+        router.push(`http://${values.subdomain}.yourdomain.com/login`);
       } else {
         const error = await response.json();
         form.setError("root", { message: error.message });
